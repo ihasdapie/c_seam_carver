@@ -43,6 +43,7 @@ void write_img(struct rgb_img *im, char *filename){
 }
 
 uint8_t get_pixel(struct rgb_img *im, int y, int x, int col){
+    // col = {0: red, 1: green, 2: blue}
     return im->raster[3 * (y*(im->width) + x) + col];
 }
 

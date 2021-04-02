@@ -1,5 +1,6 @@
 from PIL import Image
 
+
 def write_image(image, filename):
     height = image.height
     width = image.width
@@ -16,9 +17,10 @@ def write_image(image, filename):
     f.write(bytearray(img_raster))
     f.close()
 
+
 def read_2bytes(f):
-    bytes = f.read(2) # [int(f.read(1)), int(f.read(1))]
-    return int.from_bytes(bytes, byteorder = 'big')
+    bytes = f.read(2)  # [int(f.read(1)), int(f.read(1))]
+    return int.from_bytes(bytes, byteorder='big')
 
 
 def read_image(filename):
@@ -35,13 +37,14 @@ def read_image(filename):
 
     return image
 
-#Write a png image to bin
+
+# Write a png image to bin
 image = Image.open("6x5.png")
 write_image(image, "6x5.bin")
 image = Image.open("3x4.png")
 write_image(image, "3x4.bin")
 
-#Read image from a bin file, save it to png
+# Read image from a bin file, save it to png
 im2 = read_image("a.bin")
 im3 = read_image("6x5_grad.bin")
 im3.save("grad.png")
