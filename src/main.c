@@ -21,12 +21,14 @@ int main (void) {
     struct rgb_img* im;
 
     
-    read_in_img(&im, "3x4.bin");
-    print_img(im);
+    read_in_img(&im, "spirited_away.bin");
+    /* print_img(im); */
 
     calc_energy(im, &grad);
 
-    print_grad(grad);
+    /* print_grad(grad); */
+
+    write_img(grad, "sprited_away_energy.bin");
 
 
     double best_arr[] = {24.0, 22.0, 30.0, 15.0, 18.0, 19.0,
