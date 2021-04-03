@@ -45,12 +45,12 @@ image = Image.open("3x4.png")
 write_image(image, "3x4.bin")
 
 # Read image from a bin file, save it to png
-im2 = read_image("a.bin")
-im3 = read_image("6x5_grad.bin")
-im3.save("grad.png")
+# im2 = read_image("a.bin")
+# im3 = read_image("6x5_grad.bin")
+# im3.save("grad.png")
 
 
-# Write multiple images from bin to png
-for i in range(200):
-    image = read_image("img%d.bin" % i)
-    image.save("img%d.png" % i)
+# # Write multiple images from bin to png
+# for i in range(200):
+#     image = read_image("img%d.bin" % i)
+#     image.save("img%d.png" % i)

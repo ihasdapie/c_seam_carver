@@ -1,5 +1,6 @@
 #if !defined(SEAMCARVING_H)
 #define SEAMCARVING_H
+
 #include "c_img.h"
 
 void calc_energy(struct rgb_img *im, struct rgb_img **grad);
