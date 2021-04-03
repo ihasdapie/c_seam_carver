@@ -70,3 +70,4 @@ void print_grad(struct rgb_img *grad){
     printf("\n");    
     }
 }
+
