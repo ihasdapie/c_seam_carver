@@ -64,9 +64,38 @@ void calc_energy(struct rgb_img *im, struct rgb_img **grad) {
 }
 
 
-void dynamic_seam(struct rgb_img *grad, double **best_arr) {
-    // not simply enough to pick min element, but the path also has to be
-    // continous! i.e. a feasible path.
+void dynamic_seam(struct rgb_img *grad, double **best_arr){
+   int height = grad->height;
+   int width = grad->width;
+   double *newarray = (double*) malloc(height * width * sizeof(double));
+   // getting information from grad
+   for(int i = 0; i < height; i++){
+        for(int j = 0; j < width; j++){
+            newarray[i*width + j] = (double) get_pixel(grad, i, j, 0));
+        }  
+    }
+   for (int i = 1; i < height; i++){
+      for (int j = 0; j < width; j++){
+         if (j == 0){
+            newarray[i*width + j] += (newarray[(i-1)*width + j] < newarray[(i-1)*width + j+1] 
+            ? newarray[(i-1)*width + j] : newarray[(i-1)*width + j+1]);
+         }
+         else if (j == (width - 1)){
+            newarray[i*width + j] += (newarray[(i-1)*width + j-1] < newarray[(i-1)*width + j] 
+            ? newarray[(i-1)*width + j-1] : newarray[(i-1)*width + j]);
+         }
+         else{
+            int min = 100000000;
+            for (int z = -1; z < 2; z++){
+               if (newarray[(i-1)*width + j-z] < min){
+                  min = newarray[(i-1)*width + j-z];
+               }
+            }
+            newarray[i*width + j] += min;
+         }
+      }
+   }
+   *best_arr = newarray;
 }
 
 
