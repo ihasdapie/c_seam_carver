@@ -39,15 +39,15 @@ def read_image(filename):
 
 
 # Write a png image to bin
-image = Image.open("6x5.png")
-write_image(image, "6x5.bin")
-image = Image.open("3x4.png")
-write_image(image, "3x4.bin")
+# image = Image.open("6x5.png")
+# write_image(image, "6x5.bin")
+# image = Image.open("3x4.png")
+# write_image(image, "3x4.bin")
 
-# image = Image.open("./spirited_away.png")
-# write_image(image, "./spirited_away.bin")
-image = read_image("./spirited_away_energy.bin")
-image.save("spirited_away_energy.png")
+# image = Image.open("./uoftpresident.png")
+# write_image(image, "./uoftpres.bin")
+image = read_image("./asdf.bin")
+image.save("spirited_away_shrunk.png")
 
 
 # Read image from a bin file, save it to png
