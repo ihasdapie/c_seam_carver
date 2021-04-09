@@ -1,0 +1,148 @@
+#-------------------------------------------------------------------#
+#             Makefile variables from Conan Dependencies            #
+#-------------------------------------------------------------------#
+
+CONAN_ROOT_LIBPNG ?=  \
+/home/ihasdapie/.conan/data/libpng/1.6.37/_/_/package/d8b88b49d6e7691941997f64ad700b4308d0ed8c
+
+CONAN_SYSROOT_LIBPNG ?=  \
+
+
+CONAN_INCLUDE_DIRS_LIBPNG +=  \
+/home/ihasdapie/.conan/data/libpng/1.6.37/_/_/package/d8b88b49d6e7691941997f64ad700b4308d0ed8c/include
+
+CONAN_LIB_DIRS_LIBPNG +=  \
+/home/ihasdapie/.conan/data/libpng/1.6.37/_/_/package/d8b88b49d6e7691941997f64ad700b4308d0ed8c/lib
+
+CONAN_BIN_DIRS_LIBPNG +=  \
+/home/ihasdapie/.conan/data/libpng/1.6.37/_/_/package/d8b88b49d6e7691941997f64ad700b4308d0ed8c/bin
+
+CONAN_BUILD_DIRS_LIBPNG +=  \
+/home/ihasdapie/.conan/data/libpng/1.6.37/_/_/package/d8b88b49d6e7691941997f64ad700b4308d0ed8c/
+
+CONAN_RES_DIRS_LIBPNG += 
+
+CONAN_LIBS_LIBPNG +=  \
+png16
+
+CONAN_SYSTEM_LIBS_LIBPNG +=  \
+m
+
+CONAN_DEFINES_LIBPNG += 
+
+CONAN_CFLAGS_LIBPNG += 
+
+CONAN_CXXFLAGS_LIBPNG += 
+
+CONAN_SHAREDLINKFLAGS_LIBPNG += 
+
+CONAN_EXELINKFLAGS_LIBPNG += 
+
+CONAN_FRAMEWORKS_LIBPNG += 
+
+CONAN_FRAMEWORK_PATHS_LIBPNG += 
+
+CONAN_ROOT_ZLIB ?=  \
+/home/ihasdapie/.conan/data/zlib/1.2.11/_/_/package/19729b9559f3ae196cad45cb2b97468ccb75dcd1
+
+CONAN_SYSROOT_ZLIB ?=  \
+
+
+CONAN_INCLUDE_DIRS_ZLIB +=  \
+/home/ihasdapie/.conan/data/zlib/1.2.11/_/_/package/19729b9559f3ae196cad45cb2b97468ccb75dcd1/include
+
+CONAN_LIB_DIRS_ZLIB +=  \
+/home/ihasdapie/.conan/data/zlib/1.2.11/_/_/package/19729b9559f3ae196cad45cb2b97468ccb75dcd1/lib
+
+CONAN_BIN_DIRS_ZLIB += 
+
+CONAN_BUILD_DIRS_ZLIB +=  \
+/home/ihasdapie/.conan/data/zlib/1.2.11/_/_/package/19729b9559f3ae196cad45cb2b97468ccb75dcd1/
+
+CONAN_RES_DIRS_ZLIB += 
+
+CONAN_LIBS_ZLIB +=  \
+z
+
+CONAN_SYSTEM_LIBS_ZLIB += 
+
+CONAN_DEFINES_ZLIB += 
+
+CONAN_CFLAGS_ZLIB += 
+
+CONAN_CXXFLAGS_ZLIB += 
+
+CONAN_SHAREDLINKFLAGS_ZLIB += 
+
+CONAN_EXELINKFLAGS_ZLIB += 
+
+CONAN_FRAMEWORKS_ZLIB += 
+
+CONAN_FRAMEWORK_PATHS_ZLIB += 
+
+CONAN_ROOT +=  \
+$(CONAN_ROOT_LIBPNG) \
+$(CONAN_ROOT_ZLIB)
+
+CONAN_SYSROOT +=  \
+$(CONAN_SYSROOT_LIBPNG) \
+$(CONAN_SYSROOT_ZLIB)
+
+CONAN_INCLUDE_DIRS +=  \
+$(CONAN_INCLUDE_DIRS_LIBPNG) \
+$(CONAN_INCLUDE_DIRS_ZLIB)
+
+CONAN_LIB_DIRS +=  \
+$(CONAN_LIB_DIRS_LIBPNG) \
+$(CONAN_LIB_DIRS_ZLIB)
+
+CONAN_BIN_DIRS +=  \
+$(CONAN_BIN_DIRS_LIBPNG) \
+$(CONAN_BIN_DIRS_ZLIB)
+
+CONAN_BUILD_DIRS +=  \
+$(CONAN_BUILD_DIRS_LIBPNG) \
+$(CONAN_BUILD_DIRS_ZLIB)
+
+CONAN_RES_DIRS +=  \
+$(CONAN_RES_DIRS_LIBPNG) \
+$(CONAN_RES_DIRS_ZLIB)
+
+CONAN_LIBS +=  \
+$(CONAN_LIBS_LIBPNG) \
+$(CONAN_LIBS_ZLIB)
+
+CONAN_DEFINES +=  \
+$(CONAN_DEFINES_LIBPNG) \
+$(CONAN_DEFINES_ZLIB)
+
+CONAN_CFLAGS +=  \
+$(CONAN_CFLAGS_LIBPNG) \
+$(CONAN_CFLAGS_ZLIB)
+
+CONAN_CXXFLAGS +=  \
+$(CONAN_CXXFLAGS_LIBPNG) \
+$(CONAN_CXXFLAGS_ZLIB)
+
+CONAN_SHAREDLINKFLAGS +=  \
+$(CONAN_SHAREDLINKFLAGS_LIBPNG) \
+$(CONAN_SHAREDLINKFLAGS_ZLIB)
+
+CONAN_EXELINKFLAGS +=  \
+$(CONAN_EXELINKFLAGS_LIBPNG) \
+$(CONAN_EXELINKFLAGS_ZLIB)
+
+CONAN_FRAMEWORKS +=  \
+$(CONAN_FRAMEWORKS_LIBPNG) \
+$(CONAN_FRAMEWORKS_ZLIB)
+
+CONAN_FRAMEWORK_PATHS +=  \
+$(CONAN_FRAMEWORK_PATHS_LIBPNG) \
+$(CONAN_FRAMEWORK_PATHS_ZLIB)
+
+CONAN_SYSTEM_LIBS +=  \
+$(CONAN_SYSTEM_LIBS_LIBPNG) \
+$(CONAN_SYSTEM_LIBS_ZLIB)
+
+#-------------------------------------------------------------------#
+

@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <string.h>
+#include <png.h>
 
 
 
@@ -11,7 +12,6 @@ void calc_energy(struct rgb_img *im, struct rgb_img **grad) {
 
     create_img(grad, im->height, im->width);
 
-    int height = im->height;
 
     for (int h = 0; h < im->height; h++){
         for (int w = 0; w < im->width; w++) {
@@ -218,6 +218,8 @@ void remove_seam(struct rgb_img *src, struct rgb_img **dest, int *path){
     int newwidth = src->width - 1;
     int flag = 0;
     create_img(dest, newheight, newwidth);
+
+
     for (int i = 0; i < newheight; i++){
         flag = 0;
         for (int j = 0; j < newwidth + 1; j++)

@@ -1,0 +1,10 @@
+[requires]
+libpng/1.6.37
+
+[generators]
+make
+
+
+
+
+
